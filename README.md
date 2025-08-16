@@ -35,7 +35,13 @@ def rag_query(question, k=3, input_budget=480, max_new_tokens=128):
     docs = retriever.get_relevant_documents(question)
     if not docs:
         return "No relevant context found in the PDF."
+Run via Google Colab
 
+Open your notebook in Colab.
+
+Run all cells.
+
+When you run the Gradio iface.launch() cell, Colab will give you a temporary public URL
     header = "Use the context to answer concisely. If unknown, say you don't know.\n\nContext:\n"
     tail = f"\n\nQuestion: {question}\nAnswer:"
     
