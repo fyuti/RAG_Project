@@ -83,4 +83,14 @@ iface = gr.Interface(
 # ====== LAUNCH INTERFACE ======
 iface.launch()
 
+# =========Limitations / Known Issues==========
 
+Small LLM: FLAN-T5 small is lightweight and may give incomplete or inaccurate answers for complex queries.
+
+Context limitation: Only the top chunks returned by FAISS are considered — some relevant information may be missed in very large PDFs.
+
+PDF-only support: Currently supports PDFs only; other file types are not implemented.
+
+FAISS rebuild: Index is rebuilt each time the notebook runs; saving/loading the vector store for faster startup is not yet implemented.
+
+Temporary URLs in Colab: Gradio URLs generated in Colab are temporary; they expire when the session ends.
