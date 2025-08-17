@@ -77,4 +77,9 @@ iface = gr.Interface(
 # ====== LAUNCH INTERFACE ======
 iface.launch()
 
+To run this,open your notebook in Google Colab.
+
+Run all cells.
+
+When you run the Gradio iface.launch() cell, Colab will give you a temporary public URL.
 
